@@ -1,0 +1,72 @@
+{
+  "node-text": {
+    "conditionNode": {
+      "nodeInfo": "The condition node dosen't producs any outputs. It evaluates which path to execute based on the condition. To reference previous nodes in downstream paths, reference the previous node's output fields."
+    },
+    "talkTypes": {
+      "message": {
+        "title": "Message",
+        "description": "Send a message in a chat at this step in the conversation."
+      },
+      "image": {
+        "title": "Image",
+        "description": "Send a image in chat at this step in the conversation."
+      },
+      "card": {
+        "title": "Card",
+        "description": "Send a card (a component with image, title, description, and button) in chat at this step in the conversation."
+      },
+      "carousel": {
+        "title": "Carousel",
+        "description": "Send a carousel (a gallery of multiple cards) in chat at this step in the conversation."
+      }
+    }
+  },
+  "nodeRegistry": {
+    "input": {
+      "title": "Input",
+      "label": "Input",
+      "info": "Pass data of different types into your workflow."
+    },
+    "output": {
+      "title": "Output",
+      "label": "Output",
+      "info": "Output data of different types from your workflow."
+    },
+    "llm": {
+      "title": "LLM",
+      "label": "LLM",
+      "info": ""
+    },
+    "text": {
+      "title": "Text",
+      "label": "Text",
+      "info": "Accepts Text from upstream nodes and alows you to write additional text / concatinate different texts to pass to downstream nodes."
+    },
+    "knowledge": {
+      "title": "Knowledge",
+      "label": "Knowledge Base Reader",
+      "info": "Semantically query a knowledge base that can contain files, scraped URLs, and data from synced integration (e.g., Google Drive)."
+    },
+    "talk": {
+      "title": "Talk",
+      "label": "Talk",
+      "info": "Send a given message at a stage in a conversation."
+    },
+    "condition": {
+      "title": "Condition",
+      "label": "Condition",
+      "info": "Specify a series of condition and excute different paths based on the value of the conditions."
+    },
+    "merge": {
+      "title": "Merge",
+      "label": "Merge",
+      "info": "Recombine paths created by a condition node. Note: if you are not using a condition node, you shouldn't use the merge node."
+    },
+    "url": {
+      "title": "URL",
+      "label": "URL Loader",
+      "info": "Scrape the contents from the URL."
+    }
+  }
+}

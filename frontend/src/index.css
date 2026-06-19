@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family:
+    source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer components {
+  .app-container {
+    @apply p-2 bg-gray-100 h-screen min-h-screen flex flex-col overflow-hidden;
+  }
+  .btn-primary {
+    @apply px-3 py-1 text-sm rounded-md text-white bg-brand-primary;
+  }
+  .toolbar-node {
+    @apply text-sm font-medium rounded-md w-24 h-24 flex flex-col items-center justify-center gap-2 bg-white text-brand-dark border shadow;
+  }
+  .node-hover-effect {
+    @apply transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-brand-primary_lite hover:border-brand-primary hover:text-brand-primary;
+  }
+  .node-card {
+    @apply p-1 border border-brand-primary/50 bg-white rounded-md;
+  }
+  .node-sub-card {
+    @apply border-r border-t border-b border-brand-primary/50 bg-white rounded-md;
+  }
+}
